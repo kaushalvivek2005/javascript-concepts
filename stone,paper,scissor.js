@@ -7,3 +7,4 @@ const scissor=1
 const stone=2
 const paper=3
 
+console.log("hello")
