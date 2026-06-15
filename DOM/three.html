@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with kaushal</title>
+</head>
+<body style=background-color:grey>
+    
+</body>
+<script>
+    const div= document.createElement('div')
+    console.log(div)
+    div.className ="main"
+    // div.id = "myId"
+    div.id = Math.floor(Math.random() * 10 + 1)
+    div.setAttribute("title","Hello kaushal")
+    div.style.backgroundColor = "green"
+    div.style.padding = "15px"
+    //div.innerText = "Hii kaushal"
+    const addText= document.createTextNode("kaushal learn HTML")
+    div.appendChild(addText)
+    // console.log(addText)
+    document.body.appendChild(div)
+</script>
+</html>
