@@ -16,7 +16,17 @@
     const requestUrl= 'https://api.github.com/users/kaushalvivek2005'
     const xhr= new XMLHttpRequest()
     xhr.open('GET', requestUrl)
-    console.log("Hello")
+    // console.log("HELLO");
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if (xhr.readyState === 4) {
+            const data = JSON.parse(this.responseText); //parse converts string to JSON 
+            // console.log(data);
+            console.log(typeof data);       // data response of API is in string
+            console.log(data.followers);
+        }
+    }
+
     xhr.send()
 </script>
 </html>
